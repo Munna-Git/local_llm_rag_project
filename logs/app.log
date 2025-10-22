@@ -1,0 +1,80 @@
+2025-10-22 17:24:49,849 - INFO - Applied custom CSS styling.
+2025-10-22 17:24:52,394 - INFO - Logo displayed.
+2025-10-22 17:24:52,401 - INFO - Displayed sidebar content.
+2025-10-22 17:24:52,402 - INFO - Displayed main welcome content.
+2025-10-22 17:25:10,200 - INFO - Applied custom CSS styling.
+2025-10-22 17:25:10,242 - INFO - Logo displayed.
+2025-10-22 17:25:10,246 - INFO - Displayed sidebar content.
+2025-10-22 17:25:10,248 - INFO - Displayed main welcome content.
+2025-10-22 17:25:24,516 - INFO - Applied custom CSS styling.
+2025-10-22 17:25:24,578 - INFO - Logo displayed.
+2025-10-22 17:25:24,586 - INFO - Displayed sidebar content.
+2025-10-22 17:25:24,588 - INFO - Displayed main welcome content.
+2025-10-22 17:26:18,381 - INFO - Custom CSS applied.
+2025-10-22 17:26:18,386 - INFO - OpenSearch client initialized.
+2025-10-22 17:26:18,401 - INFO - Index configuration loaded from src/index_config.json.
+2025-10-22 17:26:18,521 - INFO - HEAD http://localhost:9200/documents [status:200 request:0.121s]
+2025-10-22 17:26:18,521 - INFO - Index documents already exists.
+2025-10-22 17:26:18,526 - WARNING - Logo not found, displaying placeholder.
+2025-10-22 17:26:18,526 - INFO - Sidebar configured with headers and footer.
+2025-10-22 17:26:18,526 - INFO - Loading embedding model from path: sentence-transformers/all-mpnet-base-v2
+2025-10-22 17:26:18,533 - INFO - Use pytorch device_name: cpu
+2025-10-22 17:26:18,533 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-10-22 17:26:24,882 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-10-22 17:26:32,590 - INFO - Custom CSS applied.
+2025-10-22 17:26:32,596 - INFO - OpenSearch client initialized.
+2025-10-22 17:26:32,596 - INFO - Index configuration loaded from src/index_config.json.
+2025-10-22 17:26:32,615 - INFO - HEAD http://localhost:9200/documents [status:200 request:0.018s]
+2025-10-22 17:26:32,615 - INFO - Index documents already exists.
+2025-10-22 17:26:32,617 - WARNING - Logo not found, displaying placeholder.
+2025-10-22 17:26:32,617 - INFO - Sidebar configured with headers and footer.
+2025-10-22 17:26:33,200 - INFO - Custom CSS applied.
+2025-10-22 17:26:33,202 - INFO - OpenSearch client initialized.
+2025-10-22 17:26:33,202 - INFO - Index configuration loaded from src/index_config.json.
+2025-10-22 17:26:33,222 - INFO - HEAD http://localhost:9200/documents [status:200 request:0.020s]
+2025-10-22 17:26:33,222 - INFO - Index documents already exists.
+2025-10-22 17:26:33,224 - WARNING - Logo not found, displaying placeholder.
+2025-10-22 17:26:33,226 - INFO - Sidebar configured with headers and footer.
+2025-10-22 17:26:35,716 - INFO - Custom CSS applied.
+2025-10-22 17:26:35,720 - INFO - OpenSearch client initialized.
+2025-10-22 17:26:35,721 - INFO - Index configuration loaded from src/index_config.json.
+2025-10-22 17:26:35,737 - INFO - HEAD http://localhost:9200/documents [status:200 request:0.016s]
+2025-10-22 17:26:35,737 - INFO - Index documents already exists.
+2025-10-22 17:26:35,742 - WARNING - Logo not found, displaying placeholder.
+2025-10-22 17:26:35,745 - INFO - Sidebar configured with headers and footer.
+2025-10-22 17:26:42,815 - INFO - Custom CSS applied.
+2025-10-22 17:26:42,820 - INFO - OpenSearch client initialized.
+2025-10-22 17:26:42,824 - INFO - Index configuration loaded from src/index_config.json.
+2025-10-22 17:26:42,851 - INFO - HEAD http://localhost:9200/documents [status:200 request:0.027s]
+2025-10-22 17:26:42,851 - INFO - Index documents already exists.
+2025-10-22 17:26:42,856 - WARNING - Logo not found, displaying placeholder.
+2025-10-22 17:26:42,858 - INFO - Sidebar configured with headers and footer.
+2025-10-22 17:26:43,985 - INFO - Custom CSS applied.
+2025-10-22 17:26:43,991 - INFO - OpenSearch client initialized.
+2025-10-22 17:26:43,993 - INFO - Index configuration loaded from src/index_config.json.
+2025-10-22 17:26:44,004 - INFO - HEAD http://localhost:9200/documents [status:200 request:0.011s]
+2025-10-22 17:26:44,004 - INFO - Index documents already exists.
+2025-10-22 17:26:44,004 - WARNING - Logo not found, displaying placeholder.
+2025-10-22 17:26:44,010 - INFO - Sidebar configured with headers and footer.
+2025-10-22 17:30:39,670 - INFO - Custom CSS applied.
+2025-10-22 17:30:39,675 - INFO - OpenSearch client initialized.
+2025-10-22 17:30:39,679 - INFO - Index configuration loaded from src/index_config.json.
+2025-10-22 17:30:39,763 - INFO - HEAD http://localhost:9200/documents [status:200 request:0.083s]
+2025-10-22 17:30:39,763 - INFO - Index documents already exists.
+2025-10-22 17:30:39,771 - WARNING - Logo not found, displaying placeholder.
+2025-10-22 17:30:39,774 - INFO - Sidebar configured with headers and footer.
+2025-10-22 17:31:01,163 - INFO - Custom CSS applied.
+2025-10-22 17:31:01,170 - INFO - OpenSearch client initialized.
+2025-10-22 17:31:01,170 - INFO - Index configuration loaded from src/index_config.json.
+2025-10-22 17:31:01,259 - INFO - HEAD http://localhost:9200/documents [status:200 request:0.089s]
+2025-10-22 17:31:01,259 - INFO - Index documents already exists.
+2025-10-22 17:31:01,267 - WARNING - Logo not found, displaying placeholder.
+2025-10-22 17:31:01,269 - INFO - Sidebar configured with headers and footer.
+2025-10-22 17:31:03,130 - INFO - Applied custom CSS styling.
+2025-10-22 17:31:03,166 - INFO - Logo displayed.
+2025-10-22 17:31:03,169 - INFO - Displayed sidebar content.
+2025-10-22 17:31:03,169 - INFO - Displayed main welcome content.
+2025-10-22 17:31:34,250 - INFO - Applied custom CSS styling.
+2025-10-22 17:31:34,307 - INFO - Logo displayed.
+2025-10-22 17:31:34,311 - INFO - Displayed sidebar content.
+2025-10-22 17:31:34,314 - INFO - Displayed main welcome content.

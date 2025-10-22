@@ -45,7 +45,7 @@ logger.info("Custom CSS applied.")
 # Main chatbot page rendering function
 def render_chatbot_page() -> None:
     # Set up a placeholder at the very top of the main content area
-    st.title("Jam with AI - Chatbot 🤖")
+    st.title("RetrivAI - Chatbot 🤖")
     model_loading_placeholder = st.empty()
 
     # Initialize session state variables for chatbot settings
@@ -84,7 +84,7 @@ def render_chatbot_page() -> None:
     )
 
     # Display logo or placeholder
-    logo_path = "images/jamwithai_logo.png"
+    logo_path = "images/logo.png"
     if os.path.exists(logo_path):
         st.sidebar.image(logo_path, width=220)
         logger.info("Logo displayed.")
