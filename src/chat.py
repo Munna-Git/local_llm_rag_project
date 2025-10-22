@@ -101,3 +101,52 @@ def prompt_template(query: str, context: str, history: List[Dict[str, str]]) -> 
     prompt += f"User: {query}\nAssistant:"
     logger.info("Prompt constructed with context and conversation history.")
     return prompt
+
+
+def generate_response_streaming(
+    query: str,
+    use_hybrid_search: bool,
+    num_results: int,
+    temperature: float,
+    chat_history: Optional[List[Dict[str, str]]] = None,
+) -> Optional[Iterable[str]]:
+    """
+    Generates a chatbot response by performing hybrid search and incorporating conversation history.
+
+    Args:
+        query (str): The user's query.
+        use_hybrid_search (bool): Whether to use hybrid search for context.
+        num_results (int): The number of search results to include in the context.
+        temperature (float): The temperature for the response generation.
+        chat_history (Optional[List[Dict[str, str]]]): List of chat history messages.
+
+    Returns:
+        Optional[Iterable[str]]: A generator yielding response chunks as strings, or None if an error occurs.
+    """
+    chat_history = chat_history or []
+    max_history_messages = 10
+    history = chat_history[-max_history_messages:]
+    context = ""
+
+    # Include hybrid search results if enabled
+    if use_hybrid_search:
+        logger.info("Performing hybrid search.")
+        if ASSYMETRIC_EMBEDDING:
+            prefixed_query = f"passage: {query}"
+        else:
+            prefixed_query = f"{query}"
+        embedding_model = get_embedding_model()
+        query_embedding = embedding_model.encode(
+            prefixed_query
+        ).tolist()  # Convert tensor to list of floats
+        search_results = hybrid_search(query, query_embedding, top_k=num_results)
+        logger.info("Hybrid search completed.")
+
+        # Collect text from search results
+        for i, result in enumerate(search_results):
+            context += f"Document {i}:\n{result['_source']['text']}\n\n"
+
+    # Generate prompt using the prompt_template function
+    prompt = prompt_template(query, context, history)
+
+    return run_llama_streaming(prompt, temperature)
